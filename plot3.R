@@ -1,3 +1,12 @@
+#!/usr/bin/Rscript
+#
+# The script needs an internet connection to download data.
+# Otherwise you have to provide either unzipped data file
+# ('household_power_consumption.txt') or the downloaded
+# ZIP archive (named 'data.zip') in the working directory.
+#
+# The output file (PNG image) is written to the working directory.
+
 #data download and extraction (if necessary)
 wd <- getwd()
 filename <- 'household_power_consumption.txt'
