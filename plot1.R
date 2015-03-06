@@ -28,7 +28,9 @@ dataofinterest <- subset(datatransformed, start <= datetime & datetime < end)
 
 #plotting
 library(graphics)
-pdf(file=file.path(wd, 'plot1.png'))
+png(file=file.path(wd, 'plot1.png'),
+    width=480, height=480, res=72,
+    bg='transparent')
 with(dataofinterest,
      hist(Global_active_power, col='red',
           main='Global Active Power',
